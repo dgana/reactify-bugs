@@ -1,4 +1,4 @@
-export { MainTitle } from './MainTitle'
-export { Form } from './Form'
-export { BugList } from './BugList'
-export { Footer } from './Footer'
+export { MainTitle } from './MainTitle.jsx'
+export { Form } from './Form.jsx'
+export { BugList } from './BugList.jsx'
+export { Footer } from './Footer.jsx'
