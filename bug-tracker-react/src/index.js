@@ -1,15 +1,20 @@
-console.log('HAII')
 import React from 'react'
 import { render } from 'react-dom'
+import { MainTitle, Form, BugList, Footer } from './components'
 
-class Hello extends React.Component {
+class App extends React.Component {
   render () {
     return (
-      <p>
-        Hello Bandung!
-      </p>
+      <div>
+        <div className='container'>
+          <MainTitle />
+          <Form />
+          <BugList />
+        </div>
+        <Footer />
+      </div>
     )
   }
 }
 
-render(<Hello />, document.getElementById('app'))
+render(<App />, document.getElementById('app'))
