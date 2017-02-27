@@ -21869,7 +21869,19 @@ var Card = exports.Card = function (_React$Component) {
   _createClass(Card, [{
     key: 'render',
     value: function render() {
-      var data = [{ title: 'Hello World' }, { title: 'Hello Dunia' }];
+      var data = [{
+        id: '3a4b0d8a-290f-5f70-9846-dc89eaa306d5',
+        desc: 'High Bugs',
+        severity: 'Low',
+        assignedTo: 'Alex',
+        status: 'Open'
+      }, {
+        id: '32440d8z-2avf-5z7k-ab46-dc89ea31sdcd5',
+        desc: 'Low Bugs',
+        severity: 'High',
+        assignedTo: 'Syanmil',
+        status: 'Closed'
+      }];
       return _react2.default.createElement(
         'div',
         null,
@@ -21886,7 +21898,7 @@ var Card = exports.Card = function (_React$Component) {
                 _react2.default.createElement(
                   'p',
                   { className: 'card-header-title' },
-                  item.title
+                  item.id
                 )
               ),
               _react2.default.createElement(
@@ -21895,11 +21907,25 @@ var Card = exports.Card = function (_React$Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'content' },
-                  _react2.default.createElement('span', { className: 'tag is-info' }),
-                  _react2.default.createElement('p', null)
+                  item.desc,
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tag is-info' },
+                    item.severity
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Assigned To:',
+                    item.assignedTo
+                  )
                 ),
                 _react2.default.createElement('br', null),
-                _react2.default.createElement('small', { className: 'tag is-primary' })
+                _react2.default.createElement(
+                  'small',
+                  { className: 'tag is-primary' },
+                  item.status
+                )
               ),
               _react2.default.createElement(
                 'footer',
